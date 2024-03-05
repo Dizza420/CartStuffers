@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+::-webkit-scrollbar{
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #000;
+}
+body{
+    font-family: 'Poppins',sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    display: flex;
+    box-sizing: border-box;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+nav h1{
+    font-weight: 600;
+}
+nav ul{
+    margin-left: auto;
+    list-style-type: none;
+}
+nav ul li{
+    display: inline;
+    margin: 20px;
+}
+nav ul li a{
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.intro{
+    background:linear-gradient(to top, rgba(0, 0, 0, 0.227), rgba(0, 0, 0, 0.227)), url("https://images.unsplash.com/photo-1549439602-43ebca2327af?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    box-sizing: border-box;
+    padding: 100px;
+    background-size:cover ;
+    height: 600px;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.intro h1{
+    font-size: 60px;
+}
+.intro p{
+    font-size: 25px;
+}
+.intro a{
+    background-color: white;
+    border-radius: 17px;
+    padding: 20px 100px;
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.shopping{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.shopping h1{
+    font-size: 40px;
+}
+.shopping-link{
+    font-size: 25px;
+    color: #000;
+    text-decoration: none;
+}
+.shopping>.carasoul{
+    margin: 50px;
+    display: flex;
+    gap: 10px;
+}
+.shopping .card{
+    display: flex;
+    box-sizing: border-box;
+    padding: 20px;
+    color: white;
+    background: linear-gradient(to bottom,rgba(0, 0, 0, 0.235),rgb(0, 0, 0));
+    border-radius: 15px;
+    flex-direction: column;
+    height:500px;
+    justify-content: end;
+    width: 300px;
+    font-size: 20px;
+}
+.shopping>.card>a{
+    text-decoration: none;
+    color: white;
+}
+
+.starter-pack{
+    padding: 100px;
+    box-sizing: border-box;
+}
+.starter-pack>.wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url('https://images.unsplash.com/photo-1445205170230-053b83016050?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    font-size: 25px;
+    box-sizing: border-box;
+    color: white;
+    border-radius: 15px;
+    padding: 100px;
+    height: 500px;
+}
+.starter-pack>.wrapper>a{
+    background-color: white;
+    border-radius: 17px;
+    padding: 20px 100px;
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    font-weight: 600;}
+
+.products{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.products>.wrapper{
+    box-sizing: border-box;
+    padding: 100px;
+    display: flex;
+    flex-direction: row;
+}
+.products>.wrapper>.card{
+    display: flex;
+    gap: 100px;
+}
+.products .carasoul>div{
+    display: flex;height: 300px;
+}
+.products{
+    font-size: 20px;
+}
+.products img{
+    border-radius: 15px;
+    margin: 5px;
+}
+.products .desc ul li{
+    margin: 100px 0;
+}
