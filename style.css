@@ -11,6 +11,7 @@ body{
     font-family: 'Poppins',sans-serif;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 nav{
@@ -25,6 +26,7 @@ nav h1 a{
     color: #000;
     text-decoration: none;
 }
+
 nav ul{
     margin-left: auto;
     list-style-type: none;
@@ -38,9 +40,11 @@ nav ul li a{
     font-weight: 500;
     text-decoration: none;
     color:black;
+    transition: color 0.9s;
 }
-nav a:current{
-    color: #000;
+nav ul li a:hover{
+    transition: color 0.9s;
+    color: rgb(225, 135, 32);
 }
 .intro{
     background:linear-gradient(to top, rgba(0, 0, 0, 0.227), rgba(0, 0, 0, 0.227)), url("https://images.unsplash.com/photo-1549439602-43ebca2327af?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
@@ -68,6 +72,11 @@ nav a:current{
     color: #000;
     font-size: 20px;
     font-weight: 600;
+    transition: filter 0.9s;
+}
+.intro a:hover{
+    transition: filter 0.9s;
+    filter: invert(100%);
 }
 
 .shopping{
@@ -131,7 +140,13 @@ nav a:current{
     text-decoration: none;
     color: #000;
     font-size: 20px;
-    font-weight: 600;}
+    font-weight: 600;
+    transition: filter 0.9s;
+}
+.starter-pack>.wrapper>a:hover{
+    transition: filter 0.9s;
+    filter: invert(100%);
+}
 
 .products{
     display: flex;
@@ -184,6 +199,11 @@ nav a:current{
     color: #000;
     text-decoration:none ;
     border-radius: 15px;
+    transition: filter 0.9s;
+}
+.Explore a:hover{
+    transition: filter 0.9s;
+    filter: invert(100%);
 }
 .Explore h1{
 font-size: 50px;
@@ -213,4 +233,39 @@ font-size: 50px;
 }
 .acknowledgement a{
     color: #000;
+}
+@media (max-width:1080px) {
+    .shopping>.carasoul{
+        flex-direction: column;
+        
+    }
+    .shopping>.carasoul>.card{
+        width: 90vw;
+    }
+    .starter-pack{
+        padding: 30px;
+    }
+    .starter-pack>.wrapper{
+        width: 90vw;
+    }
+    .products{
+        padding: 30px;
+    }
+    .products>.wrapper>.card{
+        gap: 0;
+        flex-direction: column;
+    }
+    .Explore{
+        margin: 40px;
+        padding: 0;
+        width: 90vw;
+        
+    }
+    .Explore>div{
+        height: 700px;
+        background: linear-gradient(to bottom,rgba(255, 255, 255, 0.127)80%,white),url('https://plus.unsplash.com/premium_photo-1673502751768-586478eb3fcb?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    }
+    .review>.carasoul{
+        flex-direction: column;
+    }
 }
